@@ -13,7 +13,12 @@ class Home extends StatelessWidget {
         crossAxisCount: 2,
         children: [
           TextButton(
-              onPressed: () {},
+              onPressed: () {
+                Navigator.push(
+                    context, MaterialPageRoute(builder: (context) => Origem()
+                    )
+                  );
+              },
               child: const Column(
                 children: [
                   Image(
