@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/src/livros/guia-mochileiro/guia_mochileiro.dart';
 import 'livros/origem/origem.dart';
 
 class Home extends StatelessWidget {
@@ -14,10 +15,8 @@ class Home extends StatelessWidget {
         children: [
           TextButton(
               onPressed: () {
-                Navigator.push(
-                    context, MaterialPageRoute(builder: (context) => Origem()
-                    )
-                  );
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => Guia_Mochileiro()));
               },
               child: const Column(
                 children: [
@@ -42,7 +41,10 @@ class Home extends StatelessWidget {
                 ],
               )),
           TextButton(
-              onPressed: () {},
+              onPressed: () {
+                Navigator.push(
+                    context, MaterialPageRoute(builder: (context) => Origem()));
+              },
               child: const Column(
                 children: [
                   Image(
