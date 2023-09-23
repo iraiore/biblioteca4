@@ -1,21 +1,21 @@
 import 'package:flutter/material.dart';
-import 'detalhes_origem.dart';
-import 'sobre_origem.dart';
+import 'detalhes_senhor_aneis.dart';
+import 'sobre_senhor_aneis.dart';
 
-class Origem extends StatelessWidget {
+class Senhor_aneis extends StatelessWidget {
   Widget build(BuildContext context) {
     return DefaultTabController(
       length: 2,
       child: Scaffold(
           appBar: AppBar(
-            title: const Text("Origem"),
+            title: const Text("O senhor Dos Aneis"),
             centerTitle: true,
             bottom: const TabBar(
               tabs: [Text("Sobre o Livro"), Text("Mais Detalhes")],
             ),
           ),
           body: TabBarView(
-            children: [Sobre_origem(), Detalhes_origem()],
+            children: [Sobre_senhor_aneis(), Detalhes_senhor_aneis()],
           )
         ),
     );

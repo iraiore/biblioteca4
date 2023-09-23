@@ -1,6 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_1/src/livros/guia-mochileiro/guia_mochileiro.dart';
+import 'livros/guia_mochileiro/guia_mochileiro.dart';
+import 'livros/senhor_aneis/senhor_aneis.dart';
 import 'livros/origem/origem.dart';
+import 'livros/inferno/inferno.dart';
+import 'livros/alice_pais/alice_pais.dart';
+import 'livros/silmarillion/silmarillion.dart';
 
 class Home extends StatelessWidget {
   Widget build(BuildContext context) {
@@ -13,6 +17,7 @@ class Home extends StatelessWidget {
         childAspectRatio: 0.6,
         crossAxisCount: 2,
         children: [
+          //O GUIA DO MOCHILEIRO DAS GALAXIAS
           TextButton(
               onPressed: () {
                 Navigator.push(context,
@@ -28,8 +33,13 @@ class Home extends StatelessWidget {
                   const Text("O Guia do Mochileiro das Galáxias")
                 ],
               )),
+
+          //O SENHOR DOS ANÉIS
           TextButton(
-              onPressed: () {},
+              onPressed: () {
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => Senhor_aneis()));
+              },
               child: const Column(
                 children: [
                   Image(
@@ -40,6 +50,7 @@ class Home extends StatelessWidget {
                   const Text("O Senhor dos Anéis")
                 ],
               )),
+          //ORIGEM
           TextButton(
               onPressed: () {
                 Navigator.push(
@@ -52,11 +63,15 @@ class Home extends StatelessWidget {
                     width: 200,
                     height: 250,
                   ),
-                  const Text("Inferno")
+                  const Text("Origem")
                 ],
               )),
+          //INFERNO
           TextButton(
-              onPressed: () {},
+              onPressed: () {
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => Inferno()));
+              },
               child: const Column(
                 children: [
                   Image(
@@ -64,11 +79,15 @@ class Home extends StatelessWidget {
                     width: 200,
                     height: 250,
                   ),
-                  const Text("Origem")
+                  const Text("Inferno")
                 ],
               )),
+          //ALICE NO PAÍS DAS MARAVILHAS
           TextButton(
-              onPressed: () {},
+              onPressed: () {
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => Alice_pais()));
+              },
               child: const Column(
                 children: [
                   Image(
@@ -76,11 +95,18 @@ class Home extends StatelessWidget {
                     width: 200,
                     height: 250,
                   ),
-                  const Text("Alice No País Das Maravilhas")
+                  const Text(
+                    "Alice No País Das Maravilhas",
+                    textAlign: TextAlign.center,
+                  )
                 ],
               )),
+          //SILMARILLION    
           TextButton(
-              onPressed: () {},
+              onPressed: () {
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => Silmarillion()));
+              },
               child: const Column(
                 children: [
                   Image(
